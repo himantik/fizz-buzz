@@ -3,8 +3,10 @@ package com.tlglearning;
 public class Main {
 
   public static void main(String[] args) {
-    for(int i = 0; i <= 100; i++){
+    int i = 1;
+    while( i <= 100 ){
       System.out.println(FizzBuzz.valueOf(i));
+      i++;
 
     }
   }
