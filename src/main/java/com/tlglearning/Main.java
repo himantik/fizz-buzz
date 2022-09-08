@@ -9,9 +9,9 @@ public class Main {
     do {
       Set<FizzBuzz> value = FizzBuzz.valueOf(i);
 
-    }
+
       System.out.println(FizzBuzz.valueOf(i));
-      System.out.printf("%d: %s%n", i value);
+      System.out.printf("%d: %s%n", i,value);
       i++;
 
     } while (i <= 100);
