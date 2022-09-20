@@ -3,12 +3,32 @@ package com.tlglearning;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Set;
+import org.junit.jupiter.api.Test;
 
 class FizzBuzzTest {
-  void valueOf(){
+
+  @Test
+  void valueOf_fizz() {
     assertEquals(Set.of(FizzBuzz.FIZZ), FizzBuzz.valueOf(6));
 
 
   }
+
+  @Test
+  void valueOf_buzz() {
+    assertEquals(Set.of(FizzBuzz.BUZZ), FizzBuzz.valueOf(10));
+  }
+
+  @Test
+  void valueOf_FizzBuzz() {
+    assertEquals(Set.of(FizzBuzz.FIZZ, FizzBuzz.BUZZ), FizzBuzz.valueOf(15));
+
+  }
+
+  @Test
+  void valueOf_none() {
+    assertEquals(Set.of(), FizzBuzz.valueOf(11));
+  }
+
 
 }
